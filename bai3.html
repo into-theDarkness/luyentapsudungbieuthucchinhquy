@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    let a = prompt('nhap chuoi')
+    let count =0;
+    let i;;
+    let regexp = /[a,e,i,o,u,y,]+%/
+    function kiemtranguyenam(a) {
+        for (i=0;i< a.length;i++){
+            if (regexp.test(a[i])==true){
+                count++;
+            }
+        }
+    }
+kiemtranguyenam(a);
+    document.write('chuoi ban can tim co so nguyen am la: ' + count);
+</script>
+</body>
+</html>
