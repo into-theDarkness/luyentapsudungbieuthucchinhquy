@@ -7,7 +7,7 @@
 <body>
 <script>
     let a = prompt('nhap du lieu');
-    let regexp = /^[0-9]{2}\-[0-9]{2}\-[0-9]{4}$/;
+    let regexp = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/;
     function checkday(a) {
         if(regexp.test(a)==true) {
             return true;
